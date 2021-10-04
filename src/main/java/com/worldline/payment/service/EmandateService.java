@@ -1,10 +1,10 @@
-package com.ingenico.payment.service;
+package com.worldline.payment.service;
 
 import java.util.Map;
 
 import org.json.simple.JSONObject;
 
-import com.ingenico.payment.domain.MerchantData;
+import com.worldline.payment.domain.MerchantData;
 
 public interface EmandateService {
 

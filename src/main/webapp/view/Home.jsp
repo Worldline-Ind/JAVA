@@ -16,7 +16,7 @@
 <script type="text/javascript"
 	src="${pageContext.request.contextPath}/js/checkout.js"></script>	
 
-<title>Ingenico</title>
+<title>Worldline</title>
 </head>
 <body>
 
@@ -197,7 +197,7 @@ $(document).ready(function(){
 		
 		  <div><button id="btnSubmit">Submit</button>
 			</div>
-		 <div id="ingenico_embeded_popup"></div>	
+		 <div id="worldline_embeded_popup"></div>	
 			
 		</form>
 		

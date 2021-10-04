@@ -1,4 +1,4 @@
-package com.ingenico.payment.service.impl;
+package com.worldline.payment.service.impl;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -9,9 +9,9 @@ import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.ingenico.payment.domain.MerchantData;
-import com.ingenico.payment.service.EmandateService;
-import com.ingenico.payment.service.PaymentService;
+import com.worldline.payment.domain.MerchantData;
+import com.worldline.payment.service.EmandateService;
+import com.worldline.payment.service.PaymentService;
 
 @Service
 public class EmandateServiceImpl implements EmandateService {

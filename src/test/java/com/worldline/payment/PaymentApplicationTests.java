@@ -1,4 +1,4 @@
-package com.ingenico.payment;
+package com.worldline.payment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

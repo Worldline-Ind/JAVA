@@ -1,12 +1,12 @@
-package com.ingenico.payment.service;
+package com.worldline.payment.service;
 
 import java.util.List;
 import java.util.Map;
 
 import org.json.simple.JSONObject;
 
-import com.ingenico.payment.domain.MerchantData;
-import com.ingenico.payment.domain.TranscationResponse;
+import com.worldline.payment.domain.MerchantData;
+import com.worldline.payment.domain.TranscationResponse;
 
 public interface PaymentService {
 	

@@ -1,4 +1,4 @@
-package com.ingenico.payment.service.impl;
+package com.worldline.payment.service.impl;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -36,9 +36,9 @@ import org.springframework.web.client.RestTemplate;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.gson.Gson;
-import com.ingenico.payment.domain.MerchantData;
-import com.ingenico.payment.domain.TranscationResponse;
-import com.ingenico.payment.service.PaymentService;
+import com.worldline.payment.domain.MerchantData;
+import com.worldline.payment.domain.TranscationResponse;
+import com.worldline.payment.service.PaymentService;
 
 @Service
 public class PaymentServiceImpl implements PaymentService{
@@ -154,7 +154,7 @@ public class PaymentServiceImpl implements PaymentService{
 		  
 		String checkOut = null;
 		if(convertStringToBool(merchantDataValue.getEmbedPaymentGatewayOnPage()))
-				checkOut = "#ingenico_embeded_popup";
+				checkOut = "#worldline_embeded_popup";
 		else
 			checkOut = "";				
 				
@@ -226,8 +226,9 @@ public class PaymentServiceImpl implements PaymentService{
 		JSONObject featureObj = new JSONObject();
 		featureObj.put("showPGResponseMsg", true);
 		featureObj.put("enableMerTxnDetails", true);
-		featureObj.put("enableAbortResponse", false);
-		featureObj.put("enableSI", convertStringToBool(merchantDataValue.getEnableEmandate()));
+		featureObj.put("enableAbortResponse", true);
+//		featureObj.put("enableSI", convertStringToBool(merchantDataValue.getEnableEmandate()));
+		featureObj.put("enableSI", false);
 		featureObj.put("enableNewWindowFlow", convertStringToBool(merchantDataValue.getEnableNewWindowFlow()));
 		featureObj.put("enableExpressPay", convertStringToBool(merchantDataValue.getEnableExpressPay()));
 		featureObj.put("enableInstrumentDeRegistration", convertStringToBool(merchantDataValue.getEnableInstrumentDeRegistration()));

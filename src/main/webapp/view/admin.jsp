@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Ingenico Admin</title>
+	<title>Worldline Admin</title>
 	<style >
 		table, td, th {
  			border: 1px solid black;
@@ -65,7 +65,7 @@
 </c:if>
 
 
-	<h2>Ingenico Admin</h2>
+	<img style="height:40px; width:230px" src="<c:url value="/images/Worldline-Mint-Horizontal.jpg"/>"/><h2>Worldline Admin</h2>
 	<form action="admin" method="post" >
 		<table  cellpadding="10" cellspacing="10" id='admin'>
 			<tr>
@@ -73,7 +73,7 @@
 					<label for="description">Description</label>
 				</th>
 				<td>
-					Ingenico ePayments (a Worldline brand) is India's leading digital payment solutions company. Being a company with more than 45 years of global payment experience, we are present in India for over 20 years and are powering over 550,000 businesses with our tailored payment solution. 
+					Worldline ePayments is India's leading digital payment solutions company. Being a company with more than 45 years of global payment experience, we are present in India for over 20 years and are powering over 550,000 businesses with our tailored payment solution. 
 				</td>
 			</tr>
 
@@ -100,7 +100,7 @@
 					<label for="salt">S.A.L.T</label>
 				</th>
 				<td>
-					<input type="text" id="salt" name="salt" value="1496899267KMOWJE" required=true/>
+					<input type="text" id="salt" name="salt" value="3976262521OAOQBJ" required=true/>
 				</td>
 			</tr>
 
@@ -270,7 +270,7 @@
    						<option value="emiBanks"${merchantData.paymentMode =='emiBanks'? 'selected="true"' : '' }>emiBanks</option>
 					</select>
 					<br><br>
-					If Bank selection is at Ingenico ePayments India Pvt. Ltd. (a Worldline brand) end then select all, if bank selection at Merchant end then pass appropriate mode respective to selected option
+					If Bank selection is at Worldline ePayments India Pvt. Ltd. end then select all, if bank selection at Merchant end then pass appropriate mode respective to selected option
 				</td>
 			</tr>
 

@@ -1,4 +1,4 @@
-package com.ingenico.payment.controller;
+package com.worldline.payment.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,9 +16,9 @@ import org.json.simple.JSONObject;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import com.google.gson.Gson;
-import com.ingenico.payment.domain.MerchantData;
-import com.ingenico.payment.domain.TranscationResponse;
-import com.ingenico.payment.service.PaymentService;
+import com.worldline.payment.domain.MerchantData;
+import com.worldline.payment.domain.TranscationResponse;
+import com.worldline.payment.service.PaymentService;
 
 @Controller
 public class PaymentController {

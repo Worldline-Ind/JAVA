@@ -1,4 +1,4 @@
-package com.ingenico.payment.domain;
+package com.worldline.payment.domain;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package com.ingenico.payment;
+package com.worldline.payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
